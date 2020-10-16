@@ -8,5 +8,12 @@ class Home extends BaseController
 	}
 
 	//--------------------------------------------------------------------
+	public function show(){
+		$data['title'] = 'Abie';
+
+		echo view('mahasiswa/header',$data);
+		echo view('mahasiswa/index', $data);
+		echo view('mahasiswa/footer',$data);
+	}
 
 }
